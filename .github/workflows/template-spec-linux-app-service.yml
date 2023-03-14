@@ -27,8 +27,6 @@ jobs:
     - name: Run Bicep linter
       run: az bicep build --file ${{ env.TEMPLATE_SPEC_FILE_PATH }}
 
-  ##comment 
-  
   publish:
     runs-on: ubuntu-latest
     needs: [ lint ]
@@ -51,3 +49,10 @@ jobs:
             --template-file ${{ env.TEMPLATE_SPEC_FILE_PATH }} \
             --location ${{ env.AZURE_REGION }} \
             --yes
+
+
+#awdawdawd
+
+
+
+#awdadawdawdw
