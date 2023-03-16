@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: '~/Desktop/gitactions/'
+          source_dir: './gitactions/'
           container_name: https://backupgitawd.blob.core.windows.net/backupgit
           connection_string: ${{ secrets.ConnectionString }}
           extra_args: '--pattern *.tar.gz'
